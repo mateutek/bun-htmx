@@ -1,0 +1,11 @@
+<h2>Users</h2>
+<table hx-get="/api/users" id="users-table">
+    {{> usersList}}
+</table>
+<button hx-get="/api/users"
+        hx-trigger="click"
+        hx-target="#users-table"
+        hx-swap="innerHTML"
+>
+    Reload Users
+</button>
